@@ -8,11 +8,12 @@ pipeline {
     }
     
     stages {
-        stage('checkout') {
+       /* stage('checkout') {
         steps {
             git branch: 'master', url: 'https://github.com/Big-Zaza/Docker_etechapp.git'
         }
 	}
+	*/
         stage('Docker build') {
             steps{ 
             sh "docker build -t docker/getting-started ."            
